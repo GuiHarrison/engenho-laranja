@@ -1,0 +1,15 @@
+/**
+ * partials/wrapper
+ * ---
+ */
+
+.wrapper {
+	width: $wrapper-width;
+	padding: 0 $margin-horizontal-large;
+	margin: 0 auto;
+	position: relative;
+
+	@include susy-media (max-width $wrapper-width) {
+		width: 100%;
+	}
+}

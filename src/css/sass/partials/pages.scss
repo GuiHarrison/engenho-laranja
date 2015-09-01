@@ -1,0 +1,345 @@
+/**
+ * partials/pages
+ * ---
+ */
+
+article {
+	@include container();
+
+	h4 {
+		color: $laranja;
+	}
+}
+
+.imagemIlustrativa {
+	float: right;
+	margin-top: 10px;
+
+	@include susy-media (max-width $wrapper-width) {
+		display: none;
+	}
+}
+
+@include susy-media (max-width $wrapper-width)  {
+
+	#ffs-tabbed-77{
+		width: 100% !important;
+		margin-top: 60px;
+	}
+
+	.resp-tabs-container {
+		width: 100% !important;
+	}
+}
+
+#categoriasPre {
+	list-style: none;
+	padding: 0;
+	overflow: hidden;
+	margin-bottom: 40px;
+
+	li {
+		display: inline-block;
+		@include span(1 of 3);
+		margin-bottom: 10px;
+
+		@include susy-media (max-width $wrapper-width) {
+			@include span(1 of 1);
+		}
+
+		a {
+			background-color: $laranja;
+			display: block;
+			color: #fff;
+			text-align: center;
+			font-size: 1.6rem;
+			text-transform: uppercase;
+			padding:7px 0;
+
+			&.catAtual {
+				background-color: #333;
+				color: #fff;
+
+
+				&:hover {
+					color: #fff;
+				}
+			}
+
+			&:hover {
+				color: #000;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+#thumbCtrlFicha, #tituloEtexto, .thumbCtrlFicha {
+	@include span(6);
+	margin-bottom: 15px;
+
+	@include susy-media (max-width $wrapper-width) {
+		@include span(12);
+	}
+}
+
+#thumbCtrlFicha, .thumbCtrlFicha {
+
+	.wp-post-image {
+		width: 100%;
+	}
+
+	.thumbEcontroles {
+		position: relative;
+		overflow: hidden;
+
+		img {
+			height: 230px;
+		}
+
+
+		.ctrl {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			background-color: rgba(#fff, .6);
+			width: 40px;
+
+			a {
+				display: block;
+				width: $volta-width;
+				height: $volta-height;
+				background: transparent url($volta-image) $volta-offset-x $volta-offset-y no-repeat;
+
+				margin: auto;
+				margin-top: 100px;
+				overflow: hidden;
+				text-indent: 100%;
+			}
+
+			&:last-child a {
+				display: block;
+				width: $vai-width;
+				height: $vai-height;
+				background: transparent url($vai-image) $vai-offset-x $vai-offset-y no-repeat;
+
+				overflow: hidden;
+				text-indent: 100%;
+			}
+		}
+
+		.prev, .prevSingle {
+			left: 0;
+		}
+
+		.next, .nextSingle {
+			right: 0;
+		}
+	}
+
+}
+
+.fichaTecnica {
+	background-color: $cinza;
+	color: #fff;
+	margin: 2px 0;
+	padding: 5px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+#tituloEtexto, .metade, #singleObras, .page {
+
+	h1 {
+		display: block;
+		margin-top: 0;
+		text-transform: uppercase;
+
+		border-bottom: solid 1px lighten($cinza, 40);
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+
+		&:before {
+			content: '';
+			display: block;
+			margin-right: 10px;
+			margin-top: 7px;
+			width: 15px;
+			height: 3rem;
+			float: left;
+			background-color: $cinza;
+		}
+	}
+}
+
+.caixasObras {
+  @include span(6);
+  display: block;
+  height: 200px;
+  margin-bottom: 10px;
+  background-size: cover;
+  position: relative;
+
+  @include susy-media (max-width $wrapper-width) {
+    @include span(12 of 12 0);
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 15px;
+    display: block;
+    background-color: rgba($laranja, .9);
+    color: #fff;
+    margin: 0;
+  }
+}
+
+.metade {
+	@include span(6);
+	padding-right: 20px;
+
+	@include susy-media (max-width $wrapper-width) {
+		@include span(12);
+	}
+}
+
+.pilares {
+	@include span(4);
+	padding: 0 10px;
+	text-align: justify;
+
+	@include susy-media (max-width $wrapper-width) {
+		@include span(12);
+	}
+
+	&:last-child {
+		@include suffix(0);
+	}
+
+	.botaoGrande {
+		margin-left: -15px;
+		font-size: 2.5rem;
+		font-weight: 400;
+		color: #fff;
+		text-transform: uppercase;
+		line-height: $botao-grande-height;
+		text-align: center;
+	}
+}
+
+span.ffs-icon-container {
+	display: none !important;
+}
+
+.ffs-sep {
+	margin: 0 !important;
+	clear: both;
+}
+
+.telefoneContato {
+	float: left;
+	margin-top: -125px;
+
+	h3 {
+		font-size: 4rem;
+		color: $laranja;
+		margin-bottom: 0;
+
+		span {
+			font-size: 2rem;
+		}
+	}
+
+	a {
+		color: $laranja;
+		margin: 0;
+	}
+}
+
+.escolhaProdutos {
+	@include container($col);
+	height: 40px * 3;
+	overflow: hidden;
+
+	.trabalho {
+		@include span(3 of $col 0);
+		padding: 0;
+		margin: 0;
+		text-align: center;
+
+		li {
+			list-style: none;
+
+			a {
+				height: 40px;
+				line-height: 40px;
+				display: block;
+				text-align: center;
+				background-color: #e3e3e3;
+			}
+		}
+	}
+
+	.imagemProduto {
+		img {
+			width: 100%;
+		}
+	}
+
+	.imagemProduto {
+		@include span(last 9 of $col 0);
+		background: #eee;
+	}
+}
+
+#listaProdutos {
+	padding: 0;
+
+	li.cadaProduto {
+		list-style: none;
+		@include span(6);
+		margin-bottom: gutter();
+
+		a {
+			display: block;
+			background-size: cover;
+			color: #fff;
+			height: 250px;
+
+			&:hover {
+				opacity: 1;
+
+				p {
+					height: 220px;
+					padding: 10px;
+					text-overflow: ellipsis;
+				}
+			}
+
+			h2 {
+				background-color: $laranja;
+				display: block;
+				width: 100%;
+				padding: 0 10px;
+				margin: 0;
+			}
+
+			p {
+				background-color: rgba($laranja, .8);
+				padding: 10px;
+				margin: 0;
+
+				display: block;
+				overflow: hidden;
+				height: 0;
+				padding: 0;
+
+				transition: height .4s, padding .3s;
+			}
+		}
+	}
+}

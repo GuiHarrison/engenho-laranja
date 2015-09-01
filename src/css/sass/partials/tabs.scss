@@ -1,0 +1,48 @@
+/**
+ * partials/tabs
+ * ---
+ */
+
+
+.post-14 {
+	position: relative;
+}
+
+ul.resp-tabs-list {
+	margin-top: 0 !important;
+}
+
+li.resp-tab-item {
+ 	margin-left: -10px !important;
+	padding: 12px 15px !important;
+}
+
+a.item-diferente {
+	position: absolute;
+	left: -10px;
+	top: 10px;
+	line-height: $item-lateral-height*0.75;
+	font-weight: 600;
+}
+
+.resp-tab-item {
+ 	width: $item-lateral-width !important;
+ 	height: $item-lateral-height !important;
+ 	background: url($item-lateral-image) $item-lateral-offset-x $item-lateral-offset-y no-repeat !important;
+ 	margin-right: 0;
+
+ 	color: #fff;
+ 	text-align: center;
+ 	text-transform: uppercase;
+}
+
+li.resp-tab-item.resp-tab-active {
+ 	border:none !important;
+ 	width: 246px !important;
+ 	
+ 	background: url($item-lateral-active-image) $item-lateral-active-offset-x $item-lateral-active-offset-y no-repeat !important;
+ }
+
+ .fruitful_tab {
+ 	padding-left: 35px !important;
+ }

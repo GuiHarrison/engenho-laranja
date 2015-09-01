@@ -1,0 +1,171 @@
+/**
+ * partials/footer
+ * ---
+ */
+
+
+.footer {
+	margin-top: 50px;
+
+	@include susy-media (max-width $wrapper-width) {
+		@include container();
+		text-align: center;
+	}
+
+	.laranja {
+		background-color: $laranja;
+		color: #fff;
+		overflow: hidden;
+		padding: 0 0 10px 0;
+
+		.footerMenu {
+			display: block;
+			float: left;
+			max-width: 20%;
+
+			list-style: none;
+			padding: 0 15px;
+
+			border-right: solid 1px #fff;
+			padding-right: 20px;
+			height: 140px;
+
+			&:last-child {
+				border-right: none;
+			}
+
+			@include susy-media (max-width $wrapper-width) {
+				@include span(12);
+				height: initial;
+				border: none;
+				border-bottom: solid 1px #fff;
+				padding-bottom: 20px;
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+			}
+
+			h4 {
+				margin: 0;
+				font-weight: 300;
+				text-transform: uppercase;
+				font-size: 1.4rem;
+			}
+
+			a {
+				color: #fff;
+			}
+
+			li {
+				a {
+					display: inline-block;
+					margin: 4px 0;
+					color: #fff;
+					font-weight: 100;
+					font-size: 1.2rem;
+					line-height: 1;
+				}
+			}
+		}
+
+		#menuObras {
+		}
+
+		#menuInstitucional {
+
+			@include susy-media (max-width $wrapper-width) {
+				border-right: none;
+				padding-right: 0;
+				padding-bottom: 30px;
+
+				border-bottom: solid 1px #fff;
+			}
+		}
+
+		.telefone {
+			@include span(last 2.5);
+
+			@include susy-media (max-width $wrapper-width) {
+				@include span(12);
+			}
+
+			h3 {
+				font-size: 2.8rem;
+				font-weight: 500;
+				margin: 0;
+
+				span {
+					font-size: 1.6rem;
+				}
+
+				@include susy-media (max-width $wrapper-width) {
+					margin: 20px 0 0 0;
+				}
+			}
+
+			p {
+				text-transform: uppercase;
+
+				@include susy-media (max-width $wrapper-width) {
+					margin: 0;
+				}
+			}
+
+			a {
+				color: #fff;
+
+				&.email {
+					font-size: 1.2rem;
+				}
+
+				&.faleConosco {
+					margin-top: 5px;
+					display: block;
+					padding: 5px;
+					width: 100%;
+					border: 1px solid #fff;
+
+					text-transform: uppercase;
+					text-align: center;
+				}
+			}
+
+			.redesSociais {
+
+				.cadaRede {
+					display: block;
+					float: right;
+					margin: 0 7px;
+				}
+			}
+		}
+	}
+
+	#menuSustentabilidade {
+		// @include span(2.5);
+
+		@include susy-media (max-width $wrapper-width) {
+			@include span(12);
+		}
+	}
+
+	.preto {
+		text-align: center;
+		color: #fff;
+		margin: 0;
+		padding: 5px 0;
+		font-size: 100%;
+
+		background: #232c36;
+		background: linear-gradient(to bottom,  #232c36 0%,#121212 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232c36', endColorstr='#121212',GradientType=0 );
+
+
+		a {
+			color: #fff;
+			font-weight: 600;
+		}
+	}
+}

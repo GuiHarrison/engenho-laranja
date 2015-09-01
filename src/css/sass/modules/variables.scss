@@ -1,0 +1,61 @@
+/**
+ * modules/variables
+ * ---
+ */
+
+
+/**
+* Medidas
+*/
+
+$menuAltura: 220px;
+
+/**
+ * Typography
+ */
+
+$font-family-base: "effra", "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
+$font-size-base: 140%;
+$line-height-base: 1.5;
+
+
+/**
+ * Colors
+ */
+
+$text-color: #444;
+$body-bg: #fff;
+$selection-bg: #444;
+$laranja: #C46600;
+$cinza: #5E5E5D;
+
+
+/**
+ * Grid
+ */
+
+$wrapper-width: 960px;
+
+
+$padding-horizontal-base: 5px;
+$padding-vertical-base: 5px;
+$margin-horizontal-base: 5px;
+$margin-vertical-base: 5px;
+$margin-horizontal-large: 15px;
+$margin-vertical-large: 15px;
+
+$col: 12;
+$susy: (
+    columns: $col,
+    gutters: 1/4,
+    math: fluid,
+    output: float,
+    last-flow: to,
+    gutter-position: split,
+    global-box-sizing: border-box,
+	debug: (
+		image: hide,
+		color: rgba(red, .25),
+		output: background,
+	),
+);
