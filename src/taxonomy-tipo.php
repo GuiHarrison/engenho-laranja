@@ -15,7 +15,7 @@
 
 						<!-- post thumbnail -->
 						<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-							<?php the_post_thumbnail(); // Declare pixel size you need inside the array ?>
+							<?php the_post_thumbnail('boxHome'); // Declare pixel size you need inside the array ?>
 						<?php endif; ?>
 						<!-- /post thumbnail -->
 
@@ -24,8 +24,6 @@
 						<!-- /post title -->
 
 						<?php //html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
-
-						<?php edit_post_link(); ?>
 
 					</div>
 

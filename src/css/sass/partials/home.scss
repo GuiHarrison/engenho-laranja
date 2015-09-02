@@ -14,6 +14,21 @@
 		margin-bottom: 10px;
 	}
 
+	.flamula-home {
+		position: absolute;
+		top: 20px;
+		left: -10px;
+
+		color: #fff;
+		padding: 10px 20px;
+		font-weight: 600;
+		text-transform: uppercase;
+
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
 	h4 {
 		position: absolute;
 		bottom: 0;
@@ -21,10 +36,16 @@
 		right: 0;
 		padding: 10px 15px;
 		display: block;
-		background-color: rgba(#000, .9);
+		background-color: rgba($laranja, .9);
 		margin: 0;
 		color: #fff;
 		font-weight: 300;
+		text-transform: uppercase;
+		font-size: 1.8rem;
+
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	a:hover {
@@ -32,7 +53,7 @@
 	}
 
 	img {
-		height: 209px;
+		width: 100%;
 
 		@include susy-media (max-width $wrapper-width) {
 			height: initial;
@@ -45,8 +66,8 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		color: #fff;
-		background-color: rgba(#000, .6);
+ 		color: #fff;
+		background-color: rgba($laranja, .6);
 		padding: 0 20px;
 		font-size: 1.6rem;
 		letter-spacing: 1px;
@@ -65,12 +86,12 @@
 #ctaFaleConosco {
 	@include span(2);
 
+	img {
+		height:276px;
+	}
+
 	@include susy-media (max-width $wrapper-width) {
 		@include span(12 of 12 0);
 		margin: auto;
-
-		img {
-			width: 100%;
-		}
 	}
 }

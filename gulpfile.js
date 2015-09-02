@@ -68,7 +68,7 @@ gulp.task("sprite", function () {
 		imgName: "sprite.png",
 		cssName: "sprite.scss",
 		cssVarMap: function (sprite) {
-			sprite.name = "" + sprite.name;
+			sprite.name = '' + sprite.name;
 		}
 	}));
 
@@ -94,16 +94,11 @@ gulp.task( "copy", function() {
 });
 
 /** CSS Preprocessors */
-gulp.task( "sass", function () {
-	return gulp.src( "src/css/sass/style.scss" )
-		.pipe( $.rubySass({
-			style: "expanded",
-			precision: 10
-		}))
-		.on( "error", function( e ) {
-			console.error( e );
-		})
-		.pipe( gulp.dest( "src/css" ) );
+var sass = require('gulp-ruby-sass');
+
+gulp.task('sass', function() {
+    return sass('src/css/sass/style.scss', { style: 'expanded', precision: 10 })
+        .pipe(gulp.dest('src/css'));
 });
 
 /** STYLES */

@@ -89,12 +89,12 @@
 		</script>
 		<?php } ?>
 
-		<?php if (is_page("obras-realizadas") || is_category()) { ?>
+		<!-- <?php if (is_page("obras-realizadas") || is_category()) { ?>
 			<script>
 				var testeCat = '<?php if (is_category("comercial")) {echo "first-child";} elseif (is_category("escolas")) {echo "nth-child(2)";} elseif (is_category("industrial")) { echo "nth-child(3)"; } elseif (is_category("infra")) {echo "nth-child(4)";} elseif (is_category("obras-especiais")) {echo "nth-child(5)";} else {echo "last-child";} ?>';
 				$('#categoriasPre li:'+testeCat+' a').addClass('catAtual');
 			</script>
-		<?php } ?>
+		<?php } ?> -->
 
 		<!-- analytics -->
 <!-- 		<script>

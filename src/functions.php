@@ -91,9 +91,9 @@ function html5blank_nav()
 
 //Listar páginas filhas
 // List child pages
-function wpb_list_child_pages() { 
+function wpb_list_child_pages() {
 
-global $post; 
+global $post;
 if ( is_page() && $post->post_parent )
     $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );
 else
