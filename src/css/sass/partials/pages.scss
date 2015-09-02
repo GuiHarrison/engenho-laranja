@@ -40,7 +40,7 @@ article {
 
 	li {
 		display: inline-block;
-		@include span(1 of 3);
+		@include span(1 of 4 0);
 		margin-bottom: 10px;
 
 		@include susy-media (max-width $wrapper-width) {
@@ -54,7 +54,7 @@ article {
 			text-align: center;
 			font-size: 1.6rem;
 			text-transform: uppercase;
-			padding:7px 0;
+			padding: 15px 0;
 
 			&.catAtual {
 				background-color: #333;
@@ -260,13 +260,16 @@ span.ffs-icon-container {
 	}
 }
 
-.escolhaProdutos {
+.escolhaInstitucional {
 	@include container($col);
-	height: 40px * 3;
+	height: $item-lateral-height * 3;
 	overflow: hidden;
+	margin: 40px 0 60px;
 
 	.trabalho {
-		@include span(3 of $col 0);
+		// @include span(3 of $col 0);
+		width: 221px;
+		float: left;
 		padding: 0;
 		margin: 0;
 		text-align: center;
@@ -275,24 +278,33 @@ span.ffs-icon-container {
 			list-style: none;
 
 			a {
-				height: 40px;
-				line-height: 40px;
 				display: block;
+				line-height: 40px;
 				text-align: center;
-				background-color: #e3e3e3;
+				color: #fff;
+				font-weight: 500;
+				text-transform: uppercase;
+				text-shadow: 0 1px 3px #000;
+
+				&:hover {
+					background-position: $item-lateral-active-offset-x $item-lateral-active-offset-y;
+				}
 			}
 		}
 	}
 
-	.imagemProduto {
+	.imagemInstitucional {
+		// @include span(last 9 of $col 0);
+		width: 1250px - 221;
+		float: right;
+		background: #eee;
+		overflow: hidden;
+		height: $item-lateral-height * 3 - 25;
+		margin-top: 2px;
+
 		img {
 			width: 100%;
 		}
-	}
-
-	.imagemProduto {
-		@include span(last 9 of $col 0);
-		background: #eee;
 	}
 }
 
@@ -342,4 +354,124 @@ span.ffs-icon-container {
 			}
 		}
 	}
+}
+
+#listaObras {
+	padding: 0;
+	overflow: hidden;
+
+	li.cadaObra {
+		list-style: none;
+		@include span(3 (25% 1%) fluid inside-static rtl);
+		margin-bottom: gutter();
+
+		a {
+			display: block;
+			background-size: cover;
+			color: #fff;
+			height: 250px;
+
+			&:hover {
+				opacity: 1;
+
+				p {
+					height: 220px;
+					padding: 10px;
+					text-overflow: ellipsis;
+				}
+			}
+
+			h2 {
+				background-color: $laranja;
+				display: block;
+				width: 100%;
+				padding: 5px 10px;
+				margin: 0;
+			}
+
+			p {
+				background-color: rgba($laranja, .8);
+				margin: 0;
+
+				display: block;
+				overflow: hidden;
+				height: 0;
+				padding: 0 10px;
+
+				transition: height .4s, padding .3s;
+			}
+		}
+	}
+}
+
+.cadaProduto {
+	@include span (6);
+
+	img {
+		width: 100%;
+	}
+}
+
+
+// Prêmios e Certificações
+
+.certificacoes {
+
+	h4 {
+		font-size: 2.4rem;
+		font-weight: 500;
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+	.grupoPremios {
+		@include container();
+
+		.cadaPremio {
+			@include span(1 of 4);
+			text-align: center;
+
+			.contemLogo {
+				border: solid 1px $laranja;
+				height: 200px;
+				padding: 20px;
+
+				white-space: nowrap;
+				text-align: center;
+				margin: 1em 0;
+			}
+
+			.helper {
+		    display: inline-block;
+		    height: 100%;
+		    vertical-align: middle;
+			}
+
+			img {
+		    vertical-align: middle;
+		    max-height: 200px;
+				max-width: 100%;
+			}
+		}
+	}
+
+	.certificacaoMor {
+		overflow: hidden;
+		margin: 0 2% 50px;
+
+		.logoEtexto {
+			@include container();
+			border: solid 1px $laranja;
+
+			img {
+				@include span(4);
+			}
+
+			p {
+				@include span(8);
+				font-size: 2rem;
+			}
+		}
+	}
+
 }

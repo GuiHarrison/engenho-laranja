@@ -44,12 +44,13 @@
 					<ul class="qualPortal">
 						<li><a href="<?php echo home_url(); ?>/institucional/epc/lage">Pré-fabricado de concreto</a></li>
 						<li><a href="">linha habitacional</a></li>
+						<li><a href="">venda de imóveis</a></li>
 					</ul>
 					<!-- /menu para escolher portal -->
-					
+
 					<!-- telefone -->
 					<div id="telefoneHead"><h2><span>(31)</span> <?php if (kirki_get_option( 'telefone' )) { echo kirki_get_option( 'telefone' );} ?></h2></div>
-					
+
 					<!-- nav
 					<nav class="nav" role="navigation">
 						<?php html5blank_nav(); ?>
@@ -62,7 +63,7 @@
 				<div class="header__menu">
 				  <a id="header__button" class="hamburger" href="#">
 				    <div class="hamburger__inner"></div>
-				  </a>  
+				  </a>
 				</div>
 
 				<div class="<?php if (wp_is_mobile()) { echo 'menuMobile'; } else { echo 'barraDeBaixo'; } ?>">
@@ -79,7 +80,7 @@
 								<span class="setinhaDireita"></span>
 							</a>
 						</li>
-						
+
 						<li class="boxPreto">
 							<a href="<?php echo home_url(); ?>/vantagens" class="cadaItem" id="itemMenu2">
 								<span class="icone menu2"></span>
@@ -91,7 +92,7 @@
 								<span class="setinhaDireita"></span>
 							</a>
 						</li>
-						
+
 						<li class="boxPreto">
 							<a href="<?php echo home_url(); ?>/obras-realizadas/" class="cadaItem" id="itemMenu3">
 								<span class="icone menu3"></span>
@@ -123,4 +124,12 @@
 		<!-- wrapper -->
 		<div class="wrapper">
 
-			<?php if (!is_page('home')) { the_breadcrumb(); } ?>
+			<?php if (!is_page('home') && !is_tax('tipo') ) { the_breadcrumb(); } elseif (is_tax('tipo')) {
+				echo '<ul id="breadcrumbs">
+					<li><a href="'. home_url() .'">Home</a></li>
+					<li class="separator">></li>
+					<li>institucional</li>
+					<li class="separator">></li>
+					<li><a href="'. home_url() .'/institucional/produtos">Produtos</a></li>
+				</ul>';
+			} ?>

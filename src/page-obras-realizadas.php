@@ -17,30 +17,29 @@
 
 		</article>
 		<!-- /article -->
-		
-		<a href="<?php echo get_home_url() . '/category/obras-especiais'; ?>" class="caixasObras" style="background-image: url(<?php echo get_field('obras_especiais'); ?>)">
-			<h4>Obras Especiais</h4>
-		</a>
 
-		<a href="<?php echo get_home_url() . '/category/infra'; ?>" class="caixasObras" style="background-image: url(<?php echo get_field('infraestrutura'); ?>)">
-			<h4>Infraestrutura</h4>
-		</a>
+		<?php
+			$terms = get_terms('category');
 
-		<a href="<?php echo get_home_url() . '/category/comercial'; ?>" class="caixasObras" style="background-image: url(<?php echo get_field('comercial/institucional'); ?>)">
-			<h4>Comercial/Insitucional</h4>
-		</a>
+			echo '<ul id="listaObras">';
 
-		<a href="<?php echo get_home_url() . '/category/industrial'; ?>" class="caixasObras" style="background-image: url(<?php echo get_field('industrial'); ?>)">
-			<h4>Industrial</h4>
-		</a>
+			foreach ( $terms as $term ) {
 
-		<a href="<?php echo get_home_url() . '/category/super'; ?>" class="caixasObras" style="background-image: url(<?php echo get_field('supermercados_e_cds'); ?>)">
-			<h4>Supermercados e CD's</h4>
-		</a>
+				echo '<li class="cadaObra">';
 
-		<a href="<?php echo get_home_url() . '/category/escolas'; ?>" class="caixasObras" style="background-image: url(<?php echo get_field('escolas'); ?>)">
-			<h4>Escolas</h4>
-		</a>
+					$term_link = get_term_link( $term );
+					$i = 0;
+
+					if ( $term->term_id !== '1' ) {
+
+						echo '<a style="background-image: url('. get_field($term->slug) .')" href="' . esc_url( $term_link ) . '">' . '<h2>' . $term->name . '</h2>' . '<p>'. $term->description . '</p>' . '</a>';
+					}
+
+				echo '</li>';
+			}
+
+			echo '</ul>';
+		 ?>
 
 	<?php endwhile; ?>
 

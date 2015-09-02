@@ -34,7 +34,7 @@ $cinza: #5E5E5D;
  * Grid
  */
 
-$wrapper-width: 960px;
+$wrapper-width: 1280px;
 
 
 $padding-horizontal-base: 5px;
@@ -45,6 +45,18 @@ $margin-horizontal-large: 15px;
 $margin-vertical-large: 15px;
 
 $col: 12;
+$susy: (
+    columns: $col,
+    gutter: 10px,
+    gutter-position: inside-static,
+    global-box-sizing: border-box,
+	debug: (
+		image: hide,
+		color: rgba(red, .25),
+		output: background,
+	),
+);
+
 $susy: (
     columns: $col,
     gutters: 1/4,
