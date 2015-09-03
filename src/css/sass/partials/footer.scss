@@ -86,6 +86,8 @@
 
 		.telefone {
 			@include span(last 2.5);
+			text-align: right;
+			float: right;
 
 			@include susy-media (max-width $wrapper-width) {
 				@include span(12);

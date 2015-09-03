@@ -9,7 +9,13 @@
 				array(
 					'posts_per_page' => '2',
 					'post_type' => 'produtos',
-					'meta_key' => 'destacar'
+					'meta_query' => array(
+						array(
+							'key' => 'destacar',
+							'value' => '"Sim"',
+							'compare' => 'LIKE'
+							)
+						)
 				)
 			);
 
@@ -21,6 +27,7 @@
 							if (the_post_thumbnail( 'boxHome' )) {
 								the_post_thumbnail( 'boxHome' );
 							}
+							
 
 							echo '<div class="flamula-home">';
 								echo array_shift(wp_get_post_terms( $post->ID, 'tipo', array('fields' => 'names') ));

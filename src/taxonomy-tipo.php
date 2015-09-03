@@ -4,6 +4,20 @@
 		<!-- section -->
 		<section>
 
+		<?php
+			$args = array('taxonomy' => 'tipo');
+			$tax_tipos = get_categories( $args );
+		?>
+		<ul id="listaProdutosIn">
+			<?php foreach ( $tax_tipos as $tax_tipo ): ?>
+			<li class="cadaProdutoIn">
+				<a href="<?php echo get_term_link($tax_tipo,$tax_tipo->taxonomy); ?>">
+					<?php echo $tax_tipo->name; ?>
+				</a>
+			</li>
+			<?php endforeach; ?>
+		</ul>
+
 			<h1><?php _e( 'Archives', 'html5blank' ); ?></h1>
 
 			<!-- article -->

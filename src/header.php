@@ -70,7 +70,7 @@
 
 					<ul id="menuPrincipal">
 						<li class="boxPreto">
-							<a href="<?php echo home_url(); ?>/institucional/epc/" class="cadaItem" id="itemMenu1">
+							<a href="<?php echo home_url(); ?>/institucional/produtos/" class="cadaItem" id="itemMenu1">
 								<span class="icone menu1"></span>
 								<span class="iconeL itemLaranja1"></span>
 								<h3 class="menuTitulo">Soluções Construtivas</h3>
