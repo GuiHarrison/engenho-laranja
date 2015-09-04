@@ -8,14 +8,13 @@
 			$SHPquery = new WP_Query(
 				array(
 					'posts_per_page' => '2',
-					'post_type' => 'produtos',
 					'meta_query' => array(
 						array(
 							'key' => 'destacar',
 							'value' => '"Sim"',
 							'compare' => 'LIKE'
-							)
 						)
+					)
 				)
 			);
 

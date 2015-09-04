@@ -9,7 +9,7 @@
 	margin: 0 auto;
 	position: relative;
 
-	@include susy-media (max-width $wrapper-width) {
+	@include susy-media (max-width 960px) {
 		width: 100%;
 	}
 }

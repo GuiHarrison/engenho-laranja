@@ -7,7 +7,7 @@
 .footer {
 	margin-top: 50px;
 
-	@include susy-media (max-width $wrapper-width) {
+	@include susy-media (max-width 960px) {
 		@include container();
 		text-align: center;
 	}
@@ -34,7 +34,7 @@
 				border-right: none;
 			}
 
-			@include susy-media (max-width $wrapper-width) {
+			@include susy-media (max-width 960px) {
 				@include span(12);
 				height: initial;
 				border: none;
@@ -75,7 +75,7 @@
 
 		#menuInstitucional {
 
-			@include susy-media (max-width $wrapper-width) {
+			@include susy-media (max-width 960px) {
 				border-right: none;
 				padding-right: 0;
 				padding-bottom: 30px;
@@ -89,7 +89,7 @@
 			text-align: right;
 			float: right;
 
-			@include susy-media (max-width $wrapper-width) {
+			@include susy-media (max-width 960px) {
 				@include span(12);
 			}
 
@@ -102,7 +102,7 @@
 					font-size: 1.6rem;
 				}
 
-				@include susy-media (max-width $wrapper-width) {
+				@include susy-media (max-width 960px) {
 					margin: 20px 0 0 0;
 				}
 			}
@@ -110,7 +110,7 @@
 			p {
 				text-transform: uppercase;
 
-				@include susy-media (max-width $wrapper-width) {
+				@include susy-media (max-width 960px) {
 					margin: 0;
 				}
 			}
@@ -148,7 +148,7 @@
 	#menuSustentabilidade {
 		// @include span(2.5);
 
-		@include susy-media (max-width $wrapper-width) {
+		@include susy-media (max-width 960px) {
 			@include span(12);
 		}
 	}

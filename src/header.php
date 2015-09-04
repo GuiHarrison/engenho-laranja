@@ -42,9 +42,9 @@
 					<!-- /logo -->
 					<!-- menu para escolher portal -->
 					<ul class="qualPortal">
-						<li><a href="<?php echo home_url(); ?>/institucional/epc/lage">Pré-fabricado de concreto</a></li>
-						<li><a href="">linha habitacional</a></li>
-						<li><a href="">venda de imóveis</a></li>
+						<li><a href="ingage.guiharrison.com/precon2">Institucional</a></li>
+						<li><a class="current" href="#">Pré-fabricado de concreto</a></li>
+						<li><a href="http://www.meuprecon.com.br">Venda de imóveis</a></li>
 					</ul>
 					<!-- /menu para escolher portal -->
 

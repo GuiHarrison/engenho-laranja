@@ -13,6 +13,29 @@
 				<!-- <div class="metade"> -->
 					<h1><?php the_title(); ?></h1>
 					<?php the_content(); ?>
+
+					<?php
+					$a = 1;
+					while ($a <= 10) {
+
+						echo '<div class="boxVan" id="box'. $a .'">';
+
+								echo '<div class="icone acor'. $a .'"></div>';
+
+								$boxObj = get_field_object('box'.$a);
+								echo '<h2>'. $boxObj['label'] .'</h2>';
+								the_field('box'.$a);
+
+								$a++;
+
+								echo '<div class="seta acorAberto"></div>';
+
+						echo '</div>';
+
+					}
+						// the_field('box1');
+					?>
+
 				<!-- </div> -->
 
 				<!-- <div class="metade">

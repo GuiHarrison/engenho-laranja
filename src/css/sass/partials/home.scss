@@ -9,7 +9,7 @@
 	position: relative !important;
 	@include span(5);
 
-	@include susy-media (max-width $wrapper-width) {
+	@include susy-media (max-width 960px) {
 		@include span(12 of 12 0);
 		margin-bottom: 10px;
 	}
@@ -55,7 +55,7 @@
 	img {
 		width: 100%;
 
-		@include susy-media (max-width $wrapper-width) {
+		@include susy-media (max-width 960px) {
 			height: initial;
 			width: 100%;
 		}
@@ -72,7 +72,7 @@
 		font-size: 1.6rem;
 		letter-spacing: 1px;
 
-		@include susy-media (max-width $wrapper-width)  {
+		@include susy-media (max-width 960px)  {
 			font-size: 1.2rem;
 			text-transform: uppercase;
 		}
@@ -90,7 +90,7 @@
 		height:276px;
 	}
 
-	@include susy-media (max-width $wrapper-width) {
+	@include susy-media (max-width 960px) {
 		@include span(12 of 12 0);
 		margin: auto;
 	}

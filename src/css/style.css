@@ -86,7 +86,7 @@ html {
   font-size: 62.5%;
   -webkit-tap-highlight-color: transparent;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   html {
     overflow-x: hidden;
   }
@@ -101,7 +101,7 @@ body {
   letter-spacing: 1px;
   font-weight: 300;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   body {
     overflow-x: hidden;
   }
@@ -216,7 +216,7 @@ input[type="search"] {
   margin: 0 auto;
   position: relative;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .wrapper {
     width: 100%;
   }
@@ -231,7 +231,7 @@ input[type="search"] {
   width: 100%;
   background: url(img/banner.png) center bottom;
   background-size: cover;
-  height: 60vh;
+  height: 100vh;
   min-height: 300px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -241,7 +241,7 @@ input[type="search"] {
 .header.headerMenuAberto {
   margin-bottom: 220px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header {
     height: 80vh;
     border-bottom: solid 8px #C46600;
@@ -256,7 +256,7 @@ input[type="search"] {
   overflow: hidden;
   font-weight: 500;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeCima {
     height: initial;
     border-radius: 0;
@@ -275,7 +275,7 @@ input[type="search"] {
   margin-left: 0.8333333333%;
   margin-right: 0.8333333333%;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeCima .logo, .header .barraDeCima #telefoneHead {
     width: 98.3333333333%;
     float: left;
@@ -287,7 +287,7 @@ input[type="search"] {
 .header .barraDeCima .logo .logo-img {
   width: 150px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeCima .logo .logo-img {
     display: block;
     margin: 0 auto;
@@ -302,7 +302,7 @@ input[type="search"] {
   margin-top: 0;
   list-style: none;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeCima .qualPortal {
     width: 98.3333333333%;
     float: left;
@@ -321,19 +321,14 @@ input[type="search"] {
 .header .barraDeCima .qualPortal li a {
   font-weight: 600;
   height: 60px;
-  padding: 0 20px;
+  padding: 10px 20px;
   text-transform: uppercase;
-  text-align: center;
+  text-align: center !important;
   border-left: solid 1px #5E5E5D;
   border-right: solid 1px #5E5E5D;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
+  display: block;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeCima .qualPortal li a {
     width: 98.3333333333%;
     float: left;
@@ -349,7 +344,7 @@ input[type="search"] {
     border-bottom: none;
   }
 }
-.header .barraDeCima .qualPortal li a:hover {
+.header .barraDeCima .qualPortal li a:hover, .header .barraDeCima .qualPortal li a.current {
   background-color: #C46600;
   color: #fff;
 }
@@ -357,7 +352,7 @@ input[type="search"] {
   text-align: right;
   line-height: 2;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeCima #telefoneHead {
     text-align: center;
     position: absolute;
@@ -371,7 +366,7 @@ input[type="search"] {
   font-size: 3rem;
   font-weight: 600;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeCima #telefoneHead h2 {
     font-size: 2rem;
     font-weight: 300;
@@ -380,7 +375,7 @@ input[type="search"] {
 .header .barraDeCima #telefoneHead h2 span {
   font-size: 2rem;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeCima #telefoneHead h2 span {
     font-size: 1em;
   }
@@ -393,7 +388,7 @@ input[type="search"] {
   background-color: rgba(255, 255, 255, 0.6);
   height: 90px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeBaixo {
     background-color: transparent;
     height: initial;
@@ -415,7 +410,7 @@ input[type="search"] {
   display: block;
   clear: both;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeBaixo #menuPrincipal {
     width: 98.3333333333%;
     float: left;
@@ -439,7 +434,7 @@ input[type="search"] {
   margin-top: -60px;
   border-top: solid 4px #C46600;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeBaixo #menuPrincipal .boxPreto {
     width: 50%;
     float: left;
@@ -451,7 +446,7 @@ input[type="search"] {
 .header .barraDeBaixo #menuPrincipal .boxPreto:hover {
   margin-top: -89px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeBaixo #menuPrincipal .boxPreto:hover {
     margin-top: initial;
   }
@@ -462,7 +457,7 @@ input[type="search"] {
 .header .barraDeBaixo #menuPrincipal .boxPreto:nth-child(n+2) .cadaItem h3 {
   margin-bottom: 13px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeBaixo #menuPrincipal .boxPreto:nth-child(n+2) .cadaItem h3 {
     margin: 0;
   }
@@ -479,7 +474,7 @@ input[type="search"] {
 .header .barraDeBaixo #menuPrincipal .boxPreto .cadaItem .icone {
   display: inline-block;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeBaixo #menuPrincipal .boxPreto .cadaItem .icone {
     display: none;
   }
@@ -491,7 +486,7 @@ input[type="search"] {
   letter-spacing: 1px;
   font-weight: 500;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeBaixo #menuPrincipal .boxPreto .cadaItem h3 {
     margin: 0;
   }
@@ -507,7 +502,7 @@ input[type="search"] {
   margin: 10px;
   font-size: 1.2rem;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeBaixo #menuPrincipal .boxPreto .cadaItem p {
     display: none;
   }
@@ -515,7 +510,7 @@ input[type="search"] {
 .header .barraDeBaixo #menuPrincipal .boxPreto .cadaItem .saibaMais {
   position: relative;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeBaixo #menuPrincipal .boxPreto .cadaItem .saibaMais {
     display: none;
   }
@@ -525,7 +520,7 @@ input[type="search"] {
   *display: inline;
   *zoom: 1;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .barraDeBaixo #menuPrincipal .boxPreto .cadaItem .setinhaDireita {
     display: none;
   }
@@ -600,7 +595,7 @@ input[type="search"] {
 .header .header__menu a:hover {
   opacity: 1;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .header .header__menu {
     display: block;
   }
@@ -903,7 +898,7 @@ input[type="search"] {
 .footer {
   margin-top: 50px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .footer {
     max-width: 100%;
     margin-left: auto;
@@ -935,7 +930,7 @@ input[type="search"] {
 .footer .laranja .footerMenu:last-child {
   border-right: none;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .footer .laranja .footerMenu {
     width: 98.3333333333%;
     float: left;
@@ -968,7 +963,7 @@ input[type="search"] {
   font-size: 1.2rem;
   line-height: 1;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .footer .laranja #menuInstitucional {
     border-right: none;
     padding-right: 0;
@@ -984,7 +979,7 @@ input[type="search"] {
   text-align: right;
   float: right;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .footer .laranja .telefone {
     width: 98.3333333333%;
     float: left;
@@ -1000,7 +995,7 @@ input[type="search"] {
 .footer .laranja .telefone h3 span {
   font-size: 1.6rem;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .footer .laranja .telefone h3 {
     margin: 20px 0 0 0;
   }
@@ -1008,7 +1003,7 @@ input[type="search"] {
 .footer .laranja .telefone p {
   text-transform: uppercase;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .footer .laranja .telefone p {
     margin: 0;
   }
@@ -1033,7 +1028,7 @@ input[type="search"] {
   float: right;
   margin: 0 7px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .footer #menuSustentabilidade {
     width: 98.3333333333%;
     float: left;
@@ -1149,7 +1144,7 @@ input[type="search"] {
   margin-left: 0.8333333333%;
   margin-right: 0.8333333333%;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .caixasHome {
     width: 100%;
     float: left;
@@ -1191,7 +1186,7 @@ input[type="search"] {
 .caixasHome img {
   width: 100%;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .caixasHome img {
     height: initial;
     width: 100%;
@@ -1208,7 +1203,7 @@ input[type="search"] {
   font-size: 1.6rem;
   letter-spacing: 1px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .caixasHome .texto {
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -1227,7 +1222,7 @@ input[type="search"] {
 #ctaFaleConosco img {
   height: 276px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   #ctaFaleConosco {
     width: 100%;
     float: left;
@@ -1302,13 +1297,13 @@ article h4 {
   float: right;
   margin-top: 10px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .imagemIlustrativa {
     display: none;
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   #ffs-tabbed-77 {
     width: 100% !important;
     margin-top: 60px;
@@ -1330,7 +1325,7 @@ article h4 {
   float: left;
   margin-bottom: 10px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   #categoriasPre li {
     width: 80%;
     float: left;
@@ -1371,7 +1366,7 @@ article h4 {
   float: left;
   margin-bottom: 10px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   #listaProdutosIn li.cadaProdutoIn {
     width: 80%;
     float: left;
@@ -1400,15 +1395,15 @@ article h4 {
   text-decoration: none;
 }
 
-#thumbCtrlFicha, #tituloEtexto, .thumbCtrlFicha {
+.thumbCtrlFicha, #tituloEtexto {
   width: 48.3333333333%;
   float: left;
   margin-left: 0.8333333333%;
   margin-right: 0.8333333333%;
   margin-bottom: 15px;
 }
-@media (max-width: 1280px) {
-  #thumbCtrlFicha, #tituloEtexto, .thumbCtrlFicha {
+@media (max-width: 960px) {
+  .thumbCtrlFicha, #tituloEtexto {
     width: 98.3333333333%;
     float: left;
     margin-left: 0.8333333333%;
@@ -1416,21 +1411,24 @@ article h4 {
   }
 }
 
-#thumbCtrlFicha .wp-post-image, .thumbCtrlFicha .wp-post-image {
+.thumbCtrlFicha .wp-post-image {
   width: 100%;
 }
-#thumbCtrlFicha .thumbEcontroles, .thumbCtrlFicha .thumbEcontroles {
+.thumbCtrlFicha .thumbEcontroles {
   position: relative;
   overflow: hidden;
+  height: 250px;
+  margin-bottom: 0 !important;
 }
-#thumbCtrlFicha .thumbEcontroles .ctrl, .thumbCtrlFicha .thumbEcontroles .ctrl {
+.thumbCtrlFicha .thumbEcontroles .ctrl {
   position: absolute;
   top: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: red;
   width: 40px;
+  z-index: 999;
 }
-#thumbCtrlFicha .thumbEcontroles .ctrl a, .thumbCtrlFicha .thumbEcontroles .ctrl a {
+.thumbCtrlFicha .thumbEcontroles .ctrl a {
   display: block;
   width: 13px;
   height: 26px;
@@ -1440,7 +1438,7 @@ article h4 {
   overflow: hidden;
   text-indent: 100%;
 }
-#thumbCtrlFicha .thumbEcontroles .ctrl:last-child a, .thumbCtrlFicha .thumbEcontroles .ctrl:last-child a {
+.thumbCtrlFicha .thumbEcontroles .ctrl:last-child a {
   display: block;
   width: 13px;
   height: 26px;
@@ -1448,11 +1446,18 @@ article h4 {
   overflow: hidden;
   text-indent: 100%;
 }
-#thumbCtrlFicha .thumbEcontroles .prev, #thumbCtrlFicha .thumbEcontroles .prevSingle, .thumbCtrlFicha .thumbEcontroles .prev, .thumbCtrlFicha .thumbEcontroles .prevSingle {
-  left: 0;
+.thumbCtrlFicha .thumbEcontroles .prev, .thumbCtrlFicha .thumbEcontroles .prevSingle {
+  left: 20px;
 }
-#thumbCtrlFicha .thumbEcontroles .next, #thumbCtrlFicha .thumbEcontroles .nextSingle, .thumbCtrlFicha .thumbEcontroles .next, .thumbCtrlFicha .thumbEcontroles .nextSingle {
-  right: 0;
+.thumbCtrlFicha .thumbEcontroles .next, .thumbCtrlFicha .thumbEcontroles .nextSingle {
+  right: 20px;
+}
+
+.controles {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  background-color: red;
 }
 
 .fichaTecnica {
@@ -1462,6 +1467,7 @@ article h4 {
   padding: 5px;
   margin: 0;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 #tituloEtexto h1, .metade h1, #singleObras h1, .page h1 {
@@ -1494,7 +1500,7 @@ article h4 {
   background-size: cover;
   position: relative;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .caixasObras {
     width: 100%;
     float: left;
@@ -1520,7 +1526,7 @@ article h4 {
   margin-right: 0.8333333333%;
   padding-right: 20px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .metade {
     width: 98.3333333333%;
     float: left;
@@ -1537,7 +1543,7 @@ article h4 {
   padding: 0 10px;
   text-align: justify;
 }
-@media (max-width: 1280px) {
+@media (max-width: 960px) {
   .pilares {
     width: 98.3333333333%;
     float: left;
@@ -1795,6 +1801,41 @@ span.ffs-icon-container {
   margin-left: 0.8333333333%;
   margin-right: 0.8333333333%;
   font-size: 2rem;
+}
+
+.boxVan {
+  background-color: #C46600;
+  color: #fff;
+  padding: 10px 10px 10px 60px;
+  margin: 10px 0;
+  position: relative;
+  height: 200px;
+  cursor: help;
+  transition: height .3s, background-color .5s;
+  overflow: hidden;
+}
+.boxVan.fechado {
+  height: 51px;
+  background-color: #5E5E5D;
+}
+.boxVan .seta {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.boxVan .seta.acroFechado {
+  top: 20px;
+}
+.boxVan .icone {
+  float: left;
+  margin-left: -40px;
+  margin-top: 5px;
+}
+.boxVan h2 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

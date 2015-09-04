@@ -19,7 +19,7 @@ html {
   // Cancel hightlight color when tapping in iOS
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 
-  @include susy-media (max-width $wrapper-width) {
+  @include susy-media (max-width 960px) {
     overflow-x: hidden;
   }
 }
@@ -33,7 +33,7 @@ body {
   letter-spacing: 1px;
   font-weight: 300;
 
-  @include susy-media (max-width $wrapper-width) {
+  @include susy-media (max-width 960px) {
     overflow-x: hidden;
   }
 }

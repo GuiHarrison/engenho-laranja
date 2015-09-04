@@ -46,7 +46,7 @@
 								<?php if (kirki_get_option( 'telefone' )) { echo kirki_get_option( 'telefone' );} ?>
 							</h3>
 							<!-- <a class="email" href="mailto:comunicacao@preconengenharia.com.br" target="_blank">comunicacao@preconengenharia.com.br</p> -->
-							<a class="faleConosco" href="#_">Fale Conosco</a>
+							<a class="faleConosco" href="<?php echo home_url() . '/contato'; ?>">Fale Conosco</a>
 							<p>Acompanhe a Precon nas redes sociais</p>
 							<div class="redesSociais">
 								<a class="cadaRede facebook" target="_blank" href="https://www.facebook.com/preconengenharia?ref=ts&fref=ts"><?php echo get_template_part( 'img/icons/social', 'facebook.svg' ); ?></a>

@@ -19,9 +19,23 @@
 			$header.toggleClass('headerMenuAberto');
 		});
 
-		$('#thumbCtrlFicha').slick({
-			prevArrow : '.prev',
-			nextArrow : '.next'
+		// $('.thumbEcontroles').slick({
+			// appendArrows: $('.controles')
+			// prevArrow : '.prev',
+			// nextArrow : '.next'
+		// });
+
+		$('.thumbEcontroles').slick();
+
+		var $boxVan = $('.boxVan'),
+				$seta = $('.seta');
+
+		$boxVan.addClass('fechado');
+		$seta.addClass('acroFechado');
+
+		$boxVan.on('click', function () {
+			$(this).toggleClass('fechado');
+			$(this).children('.seta').toggleClass('acroFechado');
 		});
 
 	});

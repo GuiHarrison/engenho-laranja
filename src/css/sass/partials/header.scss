@@ -10,7 +10,7 @@
 	width: 100%;
 	background: url(img/banner.png) center bottom;
 	background-size: cover;
-	height: 60vh;
+	height: 100vh;
 	min-height: 300px;
 	margin-bottom: 20px;
 	overflow: hidden;
@@ -22,7 +22,7 @@
 		margin-bottom: $menuAltura;
 	}
 
-	@include susy-media (max-width $wrapper-width) {
+	@include susy-media (max-width 960px) {
 		height: 80vh;
 		border-bottom: solid 8px $laranja;
 		overflow: visible;
@@ -36,7 +36,7 @@
 		overflow: hidden;
 		font-weight: 500;
 
-		@include susy-media (max-width $wrapper-width) {
+		@include susy-media (max-width 960px) {
 			height: initial;
 			border-radius: 0;
 
@@ -52,7 +52,7 @@
 		.logo, #telefoneHead {
 			@include span(3);
 
-			@include susy-media (max-width $wrapper-width) {
+			@include susy-media (max-width 960px) {
 				@include span(12);
 				position: relative;
 			}
@@ -62,7 +62,7 @@
 			.logo-img {
 				width: 150px;
 
-				@include susy-media (max-width $wrapper-width) {
+				@include susy-media (max-width 960px) {
 					display: block;
 					margin: 0 auto;
 				}
@@ -75,7 +75,7 @@
 			margin-top: 0;
 			list-style: none;
 
-			@include susy-media (max-width $wrapper-width) {
+			@include susy-media (max-width 960px) {
 				@include span(12);
 				margin-top: 40px;
 			}
@@ -91,21 +91,23 @@
 					font-weight: 600;
 
 					height: 60px;
-					padding: 0 20px;
+					padding: 10px 20px;
 					text-transform: uppercase;
-					text-align: center;
+					text-align: center !important;
 
 					border-left: solid 1px $cinza;
 					border-right: solid 1px $cinza;
 
-					display: -webkit-box;
-					display: -moz-box;
-					display: box;
-					-webkit-box-align: center;
-					-moz-box-align: center;
-					box-align: center;
+					display: block;
 
-					@include susy-media (max-width $wrapper-width) {
+					// display: -webkit-box;
+					// display: -moz-box;
+					// display: box;
+					// -webkit-box-align: center;
+					// -moz-box-align: center;
+					// box-align: center;
+
+					@include susy-media (max-width 960px) {
 						@include span(12);
 						border: none;
 						display: block;
@@ -118,7 +120,7 @@
 						}
 					}
 
-					&:hover {
+					&:hover, &.current {
 						background-color: $laranja;
 						color: #fff;
 					}
@@ -130,7 +132,7 @@
 			text-align: right;
 			line-height: 2;
 
-			@include susy-media (max-width $wrapper-width) {
+			@include susy-media (max-width 960px) {
 				text-align: center;
 
 				position: absolute;
@@ -144,7 +146,7 @@
 				font-size: 3rem;
 				font-weight: 600;
 
-				@include susy-media (max-width $wrapper-width) {
+				@include susy-media (max-width 960px) {
 					font-size: 2rem;
 					font-weight: 300;
 				}
@@ -152,7 +154,7 @@
 				span {
 					font-size: 2rem;
 
-					@include susy-media (max-width $wrapper-width) {
+					@include susy-media (max-width 960px) {
 						font-size: 1em;
 					}
 				}
@@ -168,7 +170,7 @@
 		background-color: rgba(#fff, .6);
 		height: 90px;
 
-		@include susy-media (max-width $wrapper-width) {
+		@include susy-media (max-width 960px) {
 			background-color: transparent;
 			height: initial;
 		}
@@ -183,7 +185,7 @@
 			margin: auto;
 			@include container(($box-preto-width+2) * 3);
 
-			@include susy-media (max-width $wrapper-width) {
+			@include susy-media (max-width 960px) {
 				@include span(12);
 				margin-top: 17px;
 				display: block;
@@ -206,7 +208,7 @@
 					border-top: solid 4px $laranja;
 				}
 
-				@include susy-media (max-width $wrapper-width) {
+				@include susy-media (max-width 960px) {
 					@include span(1 of 2 0);
 					background: #333;
 					padding: 20px 0;
@@ -216,7 +218,7 @@
 				&:hover {
 					margin-top: -89px;
 
-					@include susy-media (max-width $wrapper-width) {
+					@include susy-media (max-width 960px) {
 						margin-top: initial;
 					}
 				}
@@ -232,7 +234,7 @@
 						h3 {
 							margin-bottom: 13px;
 
-							@include susy-media (max-width $wrapper-width) {
+							@include susy-media (max-width 960px) {
 								margin: 0;
 							}
 						}
@@ -252,7 +254,7 @@
 					.icone {
 						display: inline-block;
 
-						@include susy-media (max-width $wrapper-width) {
+						@include susy-media (max-width 960px) {
 							display: none;
 						}
 					}
@@ -264,7 +266,7 @@
 						letter-spacing: 1px;
 						font-weight: 500;
 
-						@include susy-media (max-width $wrapper-width) {
+						@include susy-media (max-width 960px) {
 							margin: 0;
 						}
 					}
@@ -281,7 +283,7 @@
 						margin: 10px;
 						font-size: 1.2rem;
 
-						@include susy-media (max-width $wrapper-width) {
+						@include susy-media (max-width 960px) {
 							display: none;
 						}
 					}
@@ -289,7 +291,7 @@
 					.saibaMais {
 						position: relative;
 
-						@include susy-media (max-width $wrapper-width) {
+						@include susy-media (max-width 960px) {
 							display: none;
 						}
 					}
@@ -299,7 +301,7 @@
 						*display: inline;
 						*zoom: 1;
 
-						@include susy-media (max-width $wrapper-width) {
+						@include susy-media (max-width 960px) {
 							display: none;
 						}
 					}
@@ -329,7 +331,7 @@
 			list-style: none;
 			padding: 0;
 
-			@include susy-media (max-width $wrapper-width) {
+			@include susy-media (max-width 960px) {
 
 			}
 
@@ -398,7 +400,7 @@
 		opacity: 1;
 	  }
 
-	  @include susy-media (max-width $wrapper-width) {
+	  @include susy-media (max-width 960px) {
 	  	display: block;
 	  }
 	}

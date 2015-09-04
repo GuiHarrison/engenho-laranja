@@ -22,29 +22,41 @@
 			echo '</ul>';
 		 ?>
 
-			<!-- <h1><?php single_cat_title(); ?></h1> -->
+			<h1><?php single_cat_title(); ?></h1>
 
 			<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-			<div class="thumbCtrlFicha">
-				<!-- post thumbnail -->
-				<div class="thumbEcontroles">
+				<div class="thumbCtrlFicha">
+					<?php
+							echo '<div class="englobaFicha">';
 
-					<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-						<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-					<?php endif; ?>
+								echo '<div class="thumbEcontroles">';
 
-					<ul class="fichaTecnica">
-						<li><?php the_title(); ?></li>
-					</ul>
+											if (get_field('repetimagem')) {
+												while(has_sub_field('repetimagem')) {
 
+													$foto = get_sub_field('foto');
+													echo '<img src="' . $foto[url] . '" alt="' . $foto[alt] . '">';
+
+												}
+											}
+
+								echo '</div>';
+
+								// echo
+								// '<div class="controles">'.
+									// '<div class="ctrl prev"><a href="#" rel="prev"></a></div>'.
+									// '<div class="ctrl next"><a href="#" rel="next"></a></div>'.
+								// '</div>';
+
+							echo '</div>';
+							echo '<h3 class="fichaTecnica">'. get_the_title() .'</h3>';
+					?>
+				<!-- /thumbCtrlFicha -->
 				</div>
-				<!-- /post thumbnail -->
 
-			<!-- /thumbCtrlFicha -->
-			</div>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
 			<?php endif; ?>
 
 		</section>
